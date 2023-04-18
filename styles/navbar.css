@@ -1,0 +1,77 @@
+:root {
+  --nav-h: 30px;
+  --section-w: 120px;
+  --top-margin: 20px;
+  /*--nav-color-background: black;*/
+  --nav-color-slider: #ffe5e56f;
+  --nav-color-text: white;
+  --rounded-outside: 20px;
+  --rounded-inside: 18px;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: center;
+  top: var(--top-margin);
+  z-index: 99;
+  animation: appear 1s linear, slide-from-top 0.5s linear;
+}
+
+.navbar ul {
+  border: 2px solid black;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  list-style: none;
+  position: relative;
+  width: fit-content;
+  height: var(--nav-h);
+  border-radius: var(--rounded-outside);
+  /*background-color: var(--nav-color-background);*/
+  background-image: linear-gradient(
+    to right,
+    var(--slider-start),
+    var(--slider-end)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow-brutal-small);
+}
+
+.navbar ul li {
+  width: var(--section-w);
+  padding: 3px 10px;
+  color: var(--nav-color-text);
+  text-align: center;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.navbar ul .slider {
+  position: absolute;
+  left: 5px;
+  transition: left 0.2s ease-out;
+  width: calc(var(--section-w) - 10px);
+  height: calc(100% - 6px);
+  z-index: 1;
+  background-color: var(--nav-color-slider);
+  border-radius: var(--rounded-inside);
+}
+
+.navbar ul .slider.first {
+  left: 5px;
+}
+.navbar ul .slider.second {
+  left: calc(calc(var(--section-w)) + 5px);
+}
+.navbar ul .slider.third {
+  left: calc(calc(var(--section-w) * 2) + 5px);
+}
+.navbar ul .slider.fourth {
+  left: calc(calc(var(--section-w) * 3) + 5px);
+}
+.navbar ul .slider.fifth {
+  left: calc(calc(var(--section-w) * 4) + 5px);
+}

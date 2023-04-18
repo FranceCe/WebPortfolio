@@ -1,0 +1,171 @@
+@media only screen and (max-width: 1200px) {
+  .first-page .container {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .first-page .container .presentation {
+    order: 2;
+  }
+
+  .first-page .container .profile-pic-container {
+    order: 1;
+  }
+
+  .first-page .container .profile-pic-container {
+    margin-bottom: 5vh;
+    margin-bottom: 5lv;
+  }
+
+  .project-container iframe {
+    display: none;
+  }
+
+  .fourth-page .container .projects {
+    flex-direction: column;
+  }
+
+  .fourth-page .projects .project-container {
+    width: 100%;
+    height: fit-content;
+    border: 3px solid black;
+    border-radius: var(--rounded-big);
+    box-shadow: var(--shadow-brutal-small);
+    padding: 50px;
+    margin-top: 40px;
+  }
+
+  .project-container.macmeart {
+    background-image: url("../public/background-macmeart.jpg");
+    background-size: cover;
+  }
+
+  .project-container.farewelltoreason {
+    background-image: url("../public/background-macmeart.jpg");
+    background-size: cover;
+    border-bottom: 0;
+  }
+
+  .project-container .section-title-small,
+  .project-container .normal-text {
+    background: white;
+    padding: 0 20px;
+  }
+}
+
+/*////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 600px) {
+  :root {
+    --unit: min(1vh, 1vw);
+    --unit: min(1lvh, 1vw);
+  }
+
+  html {
+    font-size: var(--unit);
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  section.page {
+    padding: 4rem;
+  }
+
+  .section-title {
+    font-size: 6rem;
+    min-height: 6rem;
+  }
+
+  .section-title-small,
+  .upper-text,
+  .normal-text {
+    font-size: 4rem;
+    min-height: 4rem;
+  }
+
+  :root {
+    --profile-pic-size: 60rem;
+  }
+
+  .presentation .presentation-hello {
+    font-size: 18rem;
+    height: 18rem;
+    margin: 4rem 0;
+  }
+
+  .presentation .presentation-text {
+    font-size: 5rem;
+    padding: 0 4rem;
+  }
+
+  .first-page .container .profile-pic-container {
+    margin: 0;
+  }
+
+  :root {
+    --icon-width: 11rem;
+  }
+
+  .my-stack {
+    padding: 4rem;
+  }
+
+  .icon-container {
+    width: fit-content;
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  .frontend,
+  .backend,
+  .others {
+    margin-top: 6rem;
+    padding-top: 8rem;
+  }
+
+  .cv-message-container button {
+    margin-left: 3rem;
+  }
+
+  .fourth-page .container .project-container {
+    padding: 4rem;
+    margin-top: 6rem;
+  }
+
+  .project-container .section-title-small,
+  .project-container .normal-text {
+    padding: 0 2rem;
+    background: white;
+  }
+
+  .project-container .work-in-progress-stripe {
+    font-size: 4rem;
+    transform: translateX(50%) rotateZ(45deg) translateY(400%);
+  }
+
+  .project-container .section-title-small {
+    margin-bottom: 4rem;
+  }
+
+  .project-container .project-description {
+    margin: 0;
+  }
+
+  .my-instruction {
+    padding: 4rem;
+  }
+
+  .my-instruction .point-container,
+  .my-instruction .section-title-small {
+    margin: 3rem 0;
+  }
+
+  .fifth-page .distance-message-container {
+    margin: 6rem 0;
+  }
+
+  :root {
+    --card-w: 90vw;
+  }
+}

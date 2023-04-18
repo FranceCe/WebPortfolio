@@ -1,0 +1,30 @@
+:root {
+  --map-w: 500px;
+  --map-h: calc(var(--map-w) * 9 / 16);
+}
+
+.map-container {
+  display:inline-flex;
+  justify-content: center;
+  position: relative;
+}
+
+.map-container .map {
+  width: var(--map-w);
+  height: var(--map-h);
+  background-image: url("../public/map.PNG");
+  animation: zoom-in 2s ease-in-out forwards;
+  border-radius: var(--rounded-big);
+  box-shadow: var(--shadow-small);
+}
+
+@keyframes zoom-in {
+  from {
+    background-size: 100% 80%;
+    background-position: 20% 100%;
+  }
+  to {
+    background-size: calc(100% * 3.5) calc(80% * 3.5);
+    background-position: 40% 50%;
+  }
+}

@@ -1,0 +1,146 @@
+:root {
+  --rounded-big: 20px;
+  --rounded-medium: 10px;
+  --rounded-small: 3px;
+  --shadow-small: 2px 2px 2px #ccc;
+  --shadow-brutal-medium: 6px 6px 0px rgb(73, 73, 73);
+  --shadow-brutal-small: 2px 2px 0px rgb(73, 73, 73);
+  --border-brutal-small: 3px solid black;
+  --margin-big: 30px;
+  --margin-medium: 20px;
+  --margin-small: 10px;
+  --margin-xs: 5px;
+
+  /*colors*/
+  --pink: #ff6ffe;
+  --orange: #ff7d6f;
+  --green: #7dff6f;
+  --blue: #6f98ff;
+  --yellow: #ffff6f;
+
+  --slider-start: #6546ff;
+  --slider-end: #6bd8ff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  all: unset;
+}
+
+.typing::after {
+  content: " |";
+}
+
+html {
+  overflow: auto;
+  /*scroll-snap-type: y proximity;*/
+  width: 100%;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom,
+    var(--pink),
+    var(--orange),
+    var(--blue),
+    var(--yellow)
+  );
+  width: 100%;
+}
+
+section.page {
+  min-height: 100vh;
+  min-height: 100lvh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scroll-snap-stop: always;
+  scroll-snap-align: start;
+  padding: 50px;
+}
+
+section.page .container {
+  max-width: 100%;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-size: 30px;
+  min-height: 30px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.section-title-small,
+.upper-text,
+.normal-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Quicksand", sans-serif;
+  text-align: center;
+}
+
+.upper-text {
+  font-weight: 400;
+}
+
+.normal-text {
+  font-weight: 400;
+  text-transform: none;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-from-right {
+  from {
+    transform: translateX(30px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-left {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-top {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-from-bottom {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

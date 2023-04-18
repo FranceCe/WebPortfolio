@@ -1,0 +1,59 @@
+.fourth-page .projects {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.fourth-page .project-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 40px;
+}
+
+.fourth-page .project-container {
+  width: 40%;
+  padding: 50px;
+  border: 3px solid black;
+  border-radius: var(--rounded-big);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: var(--shadow-brutal-small);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container .project-description {
+  margin: 40px 0;
+}
+
+.project-container iframe {
+  min-height: 400px;
+  height: 50vh;
+  width: 100%;
+  display: block;
+  box-shadow: var(--shadow-brutal-small);
+  border: var(--border-brutal-small);
+  border-radius: var(--rounded-big);
+}
+
+.project-container .work-in-progress-stripe {
+  position: absolute;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  top: 0;
+  right: 0;
+  text-align: center;
+  box-shadow: var(--shadow-brutal-small);
+  width: 100%;
+  color: red;
+  transform: translateX(50%) rotateZ(45deg) translateY(500%);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(30, 30, 30),
+    rgb(30, 30, 30) 10px,
+    rgb(255, 255, 100) 10px,
+    rgb(255, 255, 100) 20px
+  );
+}

@@ -1,0 +1,20 @@
+.first-page .container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.first-page .container .presentation {
+  order: 1;
+}
+
+.first-page .container .profile-pic-container {
+  order: 2;
+}
+
+/*.first-page .container .map-container {
+  order: 3;
+  width: 100%;
+}*/

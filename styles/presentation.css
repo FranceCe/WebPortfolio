@@ -1,0 +1,34 @@
+.presentation {
+  font-family: "Quicksand", sans-serif;
+  max-width: 800px;
+  color: black;
+}
+
+.presentation .presentation-hello {
+  font-weight: 700;
+  font-size: 100px;
+  height: 100px;
+  line-height: 1;
+  text-align: center;
+  margin-bottom: 5vh;
+  margin-bottom: 5lvh;
+}
+
+.presentation .presentation-text {
+  font-weight: 400;
+  font-size: 30px;
+  animation: appear 1s linear, slide-from-left 0.5s linear;
+}
+
+.presentation .presentation-highlight {
+  font-weight: 700;
+  background-image: linear-gradient(
+    to right,
+    rgb(18, 226, 63),
+    rgb(112, 104, 251),
+    rgb(223, 26, 210)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}

@@ -1,0 +1,55 @@
+.my-instruction {
+  width: fit-content;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Quicksand", sans-serif;
+  text-transform: uppercase;
+  border: var(--border-brutal-small);
+  border-radius: var(--rounded-big);
+  box-shadow: var(--shadow-brutal-small);
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.my-instruction .section-title-small {
+  margin: 20px 0;
+}
+
+.point-container {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.point-container.before-appear {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.point-container img {
+  height: 25px;
+  margin-right: 10px;
+  aspect-ratio: 1 / 1;
+}
+
+.cv-message-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.cv-message-container button {
+  box-shadow: var(--shadow-brutal-small);
+  border: 1px solid black;
+  border-radius: var(--rounded-small);
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.cv-message-container button:hover {
+  background-color: rgb(255, 237, 34);
+}

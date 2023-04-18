@@ -1,0 +1,49 @@
+.second-page .container {
+  
+}
+
+/*.second-page .container {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 1500px) {
+  .second-page {
+    flex-direction: column;
+    scroll-snap-stop: normal;
+    scroll-snap-align: none;
+  }
+
+  .second-page .container {
+    height: 100%;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .second-page .container .my-instruction {
+    padding: 30px;
+    margin-inline: 30px;
+    width: auto;
+  }
+
+  .second-page .container .my-stack {
+    padding: 30px;
+    margin-inline: 30px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .second-page .my-instruction,
+  .second-page .my-stack {
+    min-height: 100vh;
+    min-height: 100svh;
+    max-height: fit-content;
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
+  }
+}*/
