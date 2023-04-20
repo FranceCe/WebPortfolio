@@ -12,7 +12,7 @@
 .fourth-page .project-container {
   width: 40%;
   padding: 50px;
-  border: 3px solid black;
+  border: var(--border-brutal-small);
   border-radius: var(--rounded-big);
   display: flex;
   flex-direction: column;
