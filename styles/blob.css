@@ -1,0 +1,47 @@
+:root {
+  --blob-animation: appear 1s linear, morph 10s linear infinite,
+    change-background 10s linear infinite;
+}
+
+.blob {
+  border-radius: 75% 80% 60% 90% / 90% 100% 60% 75%;
+  border: 1.5px solid black;
+  box-shadow: var(--shadow-brutal-small);
+  animation: var(--blob-animation);
+}
+
+@keyframes morph {
+  20% {
+    border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+  }
+  40% {
+    border-radius: 60% 100% 100% 60% / 60% 60% 100% 100%;
+  }
+  60% {
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+  }
+  80% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+  100% {
+    border-radius: 75% 80% 60% 90% / 90% 100% 60% 75%;
+  }
+}
+
+@keyframes change-background {
+  0% {
+    background-color: var(--orange);
+  }
+  25% {
+    background-color: var(--green);
+  }
+  50% {
+    background-color: var(--blue);
+  }
+  75% {
+    background-color: var(--yellow);
+  }
+  100% {
+    background-color: var(--orange);
+  }
+}
