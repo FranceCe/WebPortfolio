@@ -1,7 +1,8 @@
 .presentation {
   font-family: "Quicksand", sans-serif;
-  max-width: 800px;
+  max-width: min(800px, 100%);
   color: black;
+  overflow: visible;
 }
 
 .presentation .presentation-hello {
