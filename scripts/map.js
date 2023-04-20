@@ -24,7 +24,7 @@ fetch("https://api.ipify.org?format=json")
         );
         const roundedDistance = Math.round(distance);
         console.log("distance", roundedDistance);
-        showDistance(roundedDistance);
+        setDistanceMessage(roundedDistance);
       });
   })
   .catch((err) => console.log(err));
@@ -48,12 +48,40 @@ function deg2rad(deg) {
   return deg * (Math.PI / 180);
 }
 
-function showDistance(distance) {
-  const messageContainer = document.querySelector(
-    ".distance-message-container"
-  );
-  const text = `Roughly estimating based on your current ip address, it looks like we are ${
+let distanceMessage;
+function setDistanceMessage(distance) {
+  distanceMessage = `Roughly estimating based on your current ip address, it looks like we are ${
     distance < 50 ? "just" : ""
   } ${distance} Km apart!`;
-  messageContainer.innerText = text;
+}
+
+const options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: 0,
+};
+
+const distanceObserver = new IntersectionObserver(writeDistance, options);
+
+function writeDistance(elements, distanceObserver) {
+  elements.forEach((element) => {
+    if (element.isIntersecting) {
+      insertLikeTypingDistanceMessage();
+      distanceObserver.unobserve(element.target);
+    }
+  });
+}
+
+const messageContainer = document.querySelector(".distance-message-container");
+
+distanceObserver.observe(messageContainer);
+
+function insertLikeTypingDistanceMessage() {
+  setTimeout(() => {
+    if (distanceMessage) {
+      insertLikeTyping(messageContainer, distanceMessage, 50);
+    } else {
+      setTimeout(insertLikeTypingDistanceMessage, 300);
+    }
+  }, 300);
 }
