@@ -7,19 +7,19 @@
   height: var(--profile-pic-size);
   aspect-ratio: 1 / 1;
   flex-shrink: 0;
-  overflow: hidden;
   animation: slide-from-right 0.5s linear;
-  overflow: visible;
+  overflow: hidden;
+  border-radius: 50% 70% 70% 40% / 80% 80% 60% 60%;
+  animation: appear 1s linear, morph 10s linear infinite,
+    change-background 10s linear infinite;
+  border: 1.5px solid black;
+  box-shadow: var(--shadow-brutal-small);
 }
 
 .profile-pic-container .profile-pic {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  border-radius: 50% 70% 70% 40% / 80% 80% 60% 60%;
-  animation: appear 1s linear, morph 10s linear infinite,
-    change-background 10s linear infinite;
-  border: 3px solid black;
+  object-fit: scale-down;
 }
 
 @keyframes morph {
