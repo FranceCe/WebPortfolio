@@ -1,10 +1,10 @@
-const options = {
+const optionsAppear = {
   root: null,
   rootMargin: "0px",
   threshold: 0,
 };
 
-const observer = new IntersectionObserver(makeElementsAppear, options);
+const observer = new IntersectionObserver(makeElementsAppear, optionsAppear);
 
 function makeElementsAppear(elements, observer) {
   elements.forEach((element) => {
@@ -40,3 +40,6 @@ document.querySelectorAll(".card").forEach((elt, i) => {
   });
   observer.observe(elt);
 });
+
+
+
