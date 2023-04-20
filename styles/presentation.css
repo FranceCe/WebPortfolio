@@ -5,7 +5,9 @@
 }
 
 .presentation .presentation-hello {
-  font-weight: 700;
+  font-family: "Bungee Shade", "Quicksand", sans-serif;
+  white-space: nowrap;
+  font-weight: 400;
   font-size: 100px;
   height: 100px;
   line-height: 1;
