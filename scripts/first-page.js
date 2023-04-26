@@ -1,20 +1,18 @@
 const presentationTextElt = document.querySelector(".presentation-hello");
 
-setTimeout(() => {
-  insertLikeTyping(presentationTextElt, "Hello!");
-}, 200);
-
-function insertLikeTyping(targetElt, text, speed = 100, characters = 1) {
-  if (typeof text == "string") {
-    text = text.split("");
-  }
-  targetElt.classList.add("typing");
-  if (!text.length) {
-    targetElt.classList.remove("typing");
-    return;
-  }
-  targetElt.innerHTML += text.splice(0, characters).join("");
+let helloLoaded = false;
+document.fonts.ready.then(() => {
+  if (helloLoaded) return;
+  helloLoaded = true;
   setTimeout(() => {
-    insertLikeTyping(targetElt, text, speed, characters);
-  }, speed);
-}
+    insertLikeTyping(presentationTextElt, " Hello!");
+  }, 0);
+});
+
+setTimeout(() => {
+  if (helloLoaded) return;
+  helloLoaded = true;
+  setTimeout(() => {
+    insertLikeTyping(presentationTextElt, " Hello!");
+  }, 0);
+}, 5000);

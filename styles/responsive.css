@@ -36,12 +36,14 @@
   }
 
   .project-container.macmeart {
-    background-image: url("../public/background-macmeart.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url("../public/background-macmeart.jpg");
     background-size: cover;
   }
 
   .project-container.farewelltoreason {
-    background-image: url("../public/background-macmeart.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../public/background-farewelltoreason.jpg");
     background-size: cover;
     border-bottom: 0;
   }
@@ -86,13 +88,13 @@
   }
 
   :root {
-    --profile-pic-size: 60rem;
+    --blob-size: 60rem;
   }
 
   .presentation .presentation-hello {
     font-size: 18rem;
     height: 18rem;
-    margin: 4rem 0;
+    margin: 8rem 0;
   }
 
   .presentation .presentation-text {
@@ -161,7 +163,7 @@
     margin: 3rem 0;
   }
 
-  .fifth-page .distance-message-container {
+  .fifth-page .contact-blob {
     margin: 6rem 0;
   }
 

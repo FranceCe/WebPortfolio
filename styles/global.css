@@ -5,7 +5,7 @@
   --shadow-small: 2px 2px 2px #ccc;
   --shadow-brutal-medium: 6px 6px 0px rgb(73, 73, 73);
   --shadow-brutal-small: 2px 2px 0px rgb(73, 73, 73);
-  --border-brutal-small: 3px solid black;
+  --border-brutal-small: 2px solid black;
   --margin-big: 30px;
   --margin-medium: 20px;
   --margin-small: 10px;
@@ -17,6 +17,12 @@
   --green: #7dff6f;
   --blue: #6f98ff;
   --yellow: #ffff6f;
+
+  --pink-transparent: #ff6fff40;
+  --orange-transparent: #ff7d6f40;
+  --green-transparent: #7dff6f40;
+  --blue-transparent: #6f98ff40;
+  --yellow-transparent: #ffff6f40;
 
   --slider-start: #6546ff;
   --slider-end: #6bd8ff;
@@ -70,14 +76,15 @@ section.page {
 
 section.page .container {
   max-width: 100%;
+  position: relative;
 }
 
 .section-title {
   text-transform: uppercase;
   font-size: 30px;
   min-height: 30px;
-  font-weight: 700;
-  font-family: "Quicksand", sans-serif;
+  font-weight: 400;
+  font-family: "Monoton", "Quicksand", sans-serif;
   text-align: center;
 }
 

@@ -5,6 +5,45 @@
   align-items: center;
 }
 
-.fifth-page .distance-message-container {
+.fifth-page .blob.outer,
+.fifth-page .blob.inner {
+  position: absolute;
+  z-index: -1;
+  border: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 10px black;
+}
+
+.fifth-page .blob.outer {
+  width: calc(var(--blob-size) * 2.5);
+  height: calc(var(--blob-size) * 2.5);
+  transform: rotateZ(45deg);
+  animation-delay: 0s, 600ms, 0s;
+}
+
+.fifth-page .blob.inner {
+  width: calc(var(--blob-size) * 1.75);
+  height: calc(var(--blob-size) * 1.75);
+  transform: rotateZ(22deg);
+  animation-delay: 0s, 300ms, 0s;
+}
+
+.fifth-page .blob.contact-blob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: var(--blob-size);
   margin: 40px 0;
+  padding: 30px 30px;
+  overflow: hidden;
+}
+
+.fifth-page .contact-blob span {
+  display: block;
+}
+
+.fifth-page .distance-message-container {
+  height: 16px;
 }

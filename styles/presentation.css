@@ -7,6 +7,7 @@
 
 .presentation .presentation-hello {
   font-family: "Bungee Shade", "Quicksand", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
   white-space: nowrap;
   font-weight: 400;
   font-size: 100px;
@@ -25,13 +26,13 @@
 
 .presentation .presentation-highlight {
   font-weight: 700;
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
     to right,
     rgb(18, 226, 63),
     rgb(112, 104, 251),
     rgb(223, 26, 210)
   );
   background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;*/
+  color: rgba(255, 255, 255, 0.9);
 }

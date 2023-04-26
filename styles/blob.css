@@ -1,6 +1,8 @@
 :root {
-  --blob-animation: appear 1s linear, morph 10s linear infinite,
+  --blob-animation: appear 1s linear, morph 15s linear infinite,
     change-background 10s linear infinite;
+  --blob-transparent-animation: appear 1s linear, morph 15s linear infinite,
+    change-background-transparent 10s linear infinite;
 }
 
 .blob {
@@ -8,6 +10,10 @@
   border: 1.5px solid black;
   box-shadow: var(--shadow-brutal-small);
   animation: var(--blob-animation);
+}
+
+.blob-transparent {
+  animation: var(--blob-transparent-animation);
 }
 
 @keyframes morph {
@@ -43,5 +49,23 @@
   }
   100% {
     background-color: var(--orange);
+  }
+}
+
+@keyframes change-background-transparent {
+  0% {
+    background-color: var(--orange-transparent);
+  }
+  25% {
+    background-color: var(--green-transparent);
+  }
+  50% {
+    background-color: var(--blue-transparent);
+  }
+  75% {
+    background-color: var(--yellow-transparent);
+  }
+  100% {
+    background-color: var(--orange-transparent);
   }
 }

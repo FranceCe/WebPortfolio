@@ -22,6 +22,15 @@
   overflow: hidden;
 }
 
+.project-container h4 {
+  text-align: center;
+}
+
+.project-container a:visited,
+.project-container a {
+  color: black;
+}
+
 .project-container .project-description {
   margin: 40px 0;
 }

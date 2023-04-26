@@ -21,3 +21,18 @@ function setPageScroll() {
     document.documentElement.style.scrollSnapType = "none";
   }
 }
+
+function insertLikeTyping(targetElt, text, speed = 120, characters = 1) {
+  if (typeof text == "string") {
+    text = text.split("");
+  }
+  targetElt.classList.add("typing");
+  if (!text.length) {
+    targetElt.classList.remove("typing");
+    return;
+  }
+  targetElt.innerHTML += text.splice(0, characters).join("");
+  setTimeout(() => {
+    insertLikeTyping(targetElt, text, speed, characters);
+  }, speed);
+}
