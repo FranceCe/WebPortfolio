@@ -2,7 +2,6 @@
   --nav-h: 30px;
   --section-w: 120px;
   --top-margin: 20px;
-  /*--nav-color-background: black;*/
   --nav-color-slider: #ffe5e56f;
   --nav-color-text: white;
   --rounded-outside: 20px;
@@ -28,7 +27,6 @@
   width: fit-content;
   height: var(--nav-h);
   border-radius: var(--rounded-outside);
-  /*background-color: var(--nav-color-background);*/
   background-image: linear-gradient(
     to right,
     var(--slider-start),
