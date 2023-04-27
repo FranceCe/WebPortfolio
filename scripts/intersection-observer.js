@@ -32,5 +32,11 @@ document.querySelectorAll(".point-container").forEach((elt, i) => {
   });
   observer.observe(elt);
 });
-
-
+document.querySelectorAll(".project-container").forEach((elt, i) => {
+  elt.classList.add("before-appear");
+  requestAnimationFrame(() => {
+    elt.style["transition"] = "all .8s ease-in-out";
+    elt.style["transition-delay"] = transitionDelay * (i + 1) + "ms";
+  });
+  observer.observe(elt);
+});

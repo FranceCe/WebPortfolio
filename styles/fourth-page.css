@@ -22,6 +22,16 @@
   overflow: hidden;
 }
 
+.project-container.macmeart.before-appear {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+
+.project-container.farewelltoreason.before-appear {
+  opacity: 0;
+  transform: translateX(40px);
+}
+
 .project-container h4 {
   text-align: center;
 }
