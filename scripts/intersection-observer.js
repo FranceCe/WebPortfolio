@@ -32,14 +32,5 @@ document.querySelectorAll(".point-container").forEach((elt, i) => {
   });
   observer.observe(elt);
 });
-document.querySelectorAll(".card").forEach((elt, i) => {
-  elt.classList.add("before-appear");
-  requestAnimationFrame(() => {
-    elt.style["transition"] = "all .8s ease-in-out";
-    elt.style["transition-delay"] = "100ms";
-  });
-  observer.observe(elt);
-});
-
 
 
