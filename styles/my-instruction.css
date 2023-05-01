@@ -13,16 +13,16 @@
   background-color: rgba(255, 255, 255, 0.5);
 }
 
-.my-instruction .section-title-small {
-  margin-top: 20px;
+.my-instruction .section-title {
+  margin-bottom: 40px;
 }
 
-.my-instruction .section-title {
-  margin-bottom: 20px;
+.my-instruction > h4 {
+  margin-bottom: 40px;
 }
 
 .point-container {
-  margin: 20px 0;
+  margin-bottom: 40px;
   display: flex;
   align-items: center;
 }
