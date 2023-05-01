@@ -6,9 +6,10 @@
 }
 
 .flag {
+  --flag-width: 40px;
   display: block;
-  height: calc(40px / 1.6);
-  width: 40px;
+  height: calc(var(--flag-width) / 1.6);
+  width: var(--flag-width);
   border: 1.5px solid black;
   opacity: 0.4;
   cursor: pointer;

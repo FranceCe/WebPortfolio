@@ -1,4 +1,14 @@
 @media only screen and (max-width: 1200px) {
+  .flag {
+    --flag-width: 30px;
+    display: inline-block;
+  }
+
+  .flag.italian {
+    margin-top: 0;
+    margin-left: 5px;
+  }
+
   .first-page .container {
     flex-direction: column;
     flex-wrap: nowrap;
