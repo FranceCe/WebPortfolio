@@ -1,11 +1,11 @@
-const presentationTextElt = document.querySelector(".presentation-hello");
+
 
 let helloLoaded = false;
 document.fonts.ready.then(() => {
   if (helloLoaded) return;
   helloLoaded = true;
   setTimeout(() => {
-    insertLikeTyping(presentationTextElt, " Hello!");
+    insertLikeTyping(presentationTextElt, language == 'en' ? ' Hello!' : " Ciao!");
   }, 0);
 });
 
@@ -13,6 +13,6 @@ setTimeout(() => {
   if (helloLoaded) return;
   helloLoaded = true;
   setTimeout(() => {
-    insertLikeTyping(presentationTextElt, " Hello!");
+    insertLikeTyping(presentationTextElt, language == 'en' ? ' Hello!' : " Ciao!");
   }, 0);
 }, 5000);

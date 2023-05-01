@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/global.css" />
+    <link rel="stylesheet" href="styles/flags.css" />
     <link rel="stylesheet" href="styles/blob.css" />
     <link rel="stylesheet" href="styles/first-page.css" />
     <link rel="stylesheet" href="styles/presentation.css" />
@@ -30,28 +31,48 @@
   <script src="scripts/load-fonts.js"></script>
 
     <nav class="navbar">
-        <ul>
-            <li onclick="document.querySelector('.first-page').scrollIntoView({behavior:'smooth'})">about</li>
-            <li onclick="document.querySelector('.second-page').scrollIntoView({behavior:'smooth'})">stack</li>
-            <li onclick="document.querySelector('.third-page').scrollIntoView({behavior:'smooth'})">experience</li>
-            <li onclick="document.querySelector('.fourth-page').scrollIntoView({behavior:'smooth'})">works</li>
-            <li onclick="document.querySelector('.fifth-page').scrollIntoView({behavior:'smooth'})">contact</li>
-            <div class="slider"></div>
-        </ul>
+      <ul>
+          <li  lang="en" onclick="document.querySelector('.first-page').scrollIntoView({behavior:'smooth'})">about</li>
+          <li  lang="en" onclick="document.querySelector('.second-page').scrollIntoView({behavior:'smooth'})">stack</li>
+          <li  lang="en" onclick="document.querySelector('.third-page').scrollIntoView({behavior:'smooth'})">experience</li>
+          <li  lang="en" onclick="document.querySelector('.fourth-page').scrollIntoView({behavior:'smooth'})">works</li>
+          <li  lang="en" onclick="document.querySelector('.fifth-page').scrollIntoView({behavior:'smooth'})">contact</li>
+        
+          <li  lang="it" onclick="document.querySelector('.first-page').scrollIntoView({behavior:'smooth'})">su di me</li>
+          <li  lang="it" onclick="document.querySelector('.second-page').scrollIntoView({behavior:'smooth'})">stack</li>
+          <li  lang="it" onclick="document.querySelector('.third-page').scrollIntoView({behavior:'smooth'})">esperienza</li>
+          <li  lang="it" onclick="document.querySelector('.fourth-page').scrollIntoView({behavior:'smooth'})">progetti</li>
+          <li  lang="it" onclick="document.querySelector('.fifth-page').scrollIntoView({behavior:'smooth'})">contattami</li>
+
+          <div class="slider"></div>
+      </ul>
+    </nav>
     </nav>
 
     <section class="page first-page">
+      
+    <div class="flags-container">
+      <div class="flag english"></div><div class="flag italian"></div>
+    </div>
+
       <div class="container">
         <div class="presentation">
           <h3 class="presentation-hello"></h3>
-          <h5 class="presentation-text">
+          <h5 class="presentation-text" lang="en">
               My name is 
               <span class="presentation-highlight">Francesco Cesana</span>,
               I'm a self taught 
               <span class="presentation-highlight"> web developer</span>
               based in the Milan/Monza area. 
               I strive to improve the web and my skills with every line of code.
-          </h5>
+          </h5>         
+          <h5 class="presentation-text" lang="it">
+            Mi chiamo
+            <span class="presentation-highlight">Francesco Cesana</span>,
+            Sono uno
+            <span class="presentation-highlight"> sviluppatore web</span>
+            autodidatta. 
+        </h5>
         </div>
         <div class="profile-pic-container blob">
           <img src="public/profile-picture.PNG" alt="" class="profile-pic">
@@ -62,7 +83,8 @@
     <section class="page second-page">
       <div class="container">
         <section class="my-stack">
-          <h3 class="section-title">My favorite stack</h3>
+          <h3 class="section-title" lang="en">My favorite stack</h3>
+          <h3 class="section-title" lang="it">La mia stack preferita</h3>
             <div class="frontend">
               <h4 class="section-title-small">Frontend</h4>
               <div class="icon-container">
@@ -104,7 +126,8 @@
             </div>
 
             <div class="others">
-              <h4 class="section-title-small">Others</h4>
+              <h4 class="section-title-small" lang="en">Others</h4>
+              <h4 class="section-title-small" lang="it">Altri</h4>
               <div class="icon-container">
               <img src="public/git-scm-icon.svg"></img>
                 <span class="normal-text">Git & GitHub</span>
@@ -122,20 +145,45 @@
     <section class="page third-page">
       <div class="container">
         <section class="my-instruction">
-          <h3 class="section-title">My Instruction & skills</h3>
-          <h4 class="section-title-small">Main points</h4>
-          <div class="point-container"><img src="public/document.svg" alt=""><span class="upper-text">Diploma from Liceo Scientifico Guglielmo Marconi (Parma)</span></div>
-          <div class="point-container"><img src="public/car.svg" alt=""><span class="upper-text">B-type driver's licence (Patente B)</span></div>
-          <div class="point-container"><img src="public/plane.svg" alt=""><span class="upper-text">Study experience in Scotland</span></div>
-          <div class="point-container"><img src="public/award.svg" alt=""><span class="upper-text">IELTS C1 English language certificate</span></div>
-          <div class="point-container"><img src="public/pencil.svg" alt=""><span class="upper-text">University degree in philosophy from Università degli studi di Milano</span></div>
-          <div class="point-container"><img src="public/briefcase.svg" alt=""><span class="upper-text">Internship at <a href="https://www.expert.ai/" target="_blank">Expert.ai</a></span></div>
+          <h3 class="section-title" lang="en">My Instruction & skills</h3>
+          <h3 class="section-title" lang="it">Esperienza</h3>
+          <h4 class="section-title-small" lang="en">Main points</h4>
+          <h4 class="section-title-small" lang="it">Punti principali</h4>
+          <div class="point-container"><img src="public/document.svg" alt="">
+            <span class="upper-text" lang="en">Diploma from Liceo Scientifico Guglielmo Marconi (Parma)</span>
+            <span class="upper-text" lang="it">Diploma presso Liceo Scientifico Guglielmo Marconi (Parma)</span>
+          </div>
+          <div class="point-container"><img src="public/car.svg" alt="">
+            <span class="upper-text" lang="en">B-type driver's licence (Patente B)</span>
+            <span class="upper-text" lang="it">B-type driver's licence (Patente B)</span>
+          </div>
+          <div class="point-container"><img src="public/plane.svg" alt="">
+            <span class="upper-text" lang="en">Study experience in Scotland</span>
+            <span class="upper-text" lang="it">Esperienza di studio in Scotland</span>
+          </div>
+          <div class="point-container"><img src="public/award.svg" alt="">
+            <span class="upper-text" lang="en">IELTS C1 English language certificate</span>
+            <span class="upper-text" lang="it">Certificato di lingua inglese IELTS C1</span>
+          </div>
+          <div class="point-container"><img src="public/pencil.svg" alt="">
+            <span class="upper-text" lang="en">University degree in philosophy from Università degli studi di Milano</span>
+            <span class="upper-text" lang="it">Laurea in filosofia presso Università degli studi di Milano</span>
+          </div>
+          <div class="point-container"><img src="public/briefcase.svg" alt="">
+            <span lang="en" class="upper-text">Internship at <a href="https://www.expert.ai/" target="_blank">Expert.ai</a></span>
+            <span lang="it" class="upper-text">Tirocinio presso <a href="https://www.expert.ai/" target="_blank">Expert.ai</a></span>
+          </div>
 
           <div class="cv-message-container">
-            <h4 class="section-title-small">Wanna know the full story?</h4>
-            <button class="upper-text">
-              <a href="/public/CV-Francesco-Cesana.pdf" download="Francesco-Cesana-CV">
+            <h4 class="section-title-small" lang="en">Wanna know the full story?</h4>
+            <h4 class="section-title-small" lang="it">Vuoi la storia completa?</h4>
+            <button class="upper-text" lang="en">
+              <a href="/public/CV-Francesco-Cesana.pdf" download="Francesco-Cesana-CV-en">
               Download my CV</a>
+            </button>
+            <button class="upper-text" lang="it">
+              <a href="/public/CV-Francesco-Cesana.pdf" download="Francesco-Cesana-CV-it">
+              Scarica il mio CV</a>
             </button>
           </div>
         </section>
@@ -144,19 +192,23 @@
 
     <section class="page fourth-page">
       <div class="container">
-        <h3 class="section-title">Check out some of my works</h3>
+        <h3 class="section-title" lang="en">Check out some of my works</h3>
+        <h3 class="section-title" lang="it">Alcuni siti che ho fatto</h3>
         <section class="projects">
           <div class="project-container macmeart">
             <h4 class="section-title-small"><a id="macmeart-link" target="_blank" href="https://www.macmeart.art">macmeart.art</a></h4>
-            <p class="project-description normal-text">A static website to showcase the paintings of an artist. Made with VueJs & TailwindCss</p>
+            <p class="project-description normal-text" lang="en">A static website to showcase the paintings of an artist. Made with VueJs & TailwindCss</p>
+            <p class="project-description normal-text" lang="it">Un sito statico per un artista. Fatto con VueJs & TailwindCss</p>
               <iframe src="https://www.macmeart.art"></iframe>
           </div>
           <div class="project-container farewelltoreason">
-            <div class="work-in-progress-stripe">work in progress</div>
+            <div class="work-in-progress-stripe" lang="en">work in progress</div>
+            <div class="work-in-progress-stripe" lang="it">lavori in corso</div>
             <h4 class="section-title-small"><a target="_blank" href="https://www.farewelltoreason.com">farewelltoreason.com</a></h4>
-            <p class="project-description normal-text">A website to visualize argument trees. Made with VueJs and Tailwind in the frontend and Express and 
+            <p class="project-description normal-text" lang="en">A website to visualize argument trees. Made with VueJs and Tailwind in the frontend and Express and 
               MongoDb in the backend. Includes functions such as subscription and authentication and the possibility
                to contribute to the website by writing your own arguments. Still a work in progress.</p>
+            <p class="project-description normal-text" lang="it">Un sito per visualizzare argomentazioni</p>
                <iframe src="https://www.farewelltoreason.com"></iframe>
             </div>
           </div>
@@ -168,19 +220,22 @@
       <div class="container">
         <div class="blob blob-transparent outer"></div>
         <div class="blob blob-transparent inner"></div>
-        <h3 class="section-title">Get in touch!</h3>
+        <h3 class="section-title" lang="en">Get in touch!</h3>
+        <h3 class="section-title" lang="it">Contattami!</h3>
           <div class="contact-blob blob">
               <span class="normal-text">Francesco Cesana</span>
               <span class="normal-text">cesana.francesco@protonmail.com</span>
               <span class="normal-text">+39 3464778586</span>
           </div>
-        <h4 class="distance-message-container normal-text"></h4>
+        <h4 class="distance-message-container normal-text" lang="en"></h4>
+        <h4 class="distance-message-container normal-text" lang="it"></h4>
       </div>
     </section>
 
   </body>
 
   <script src="scripts/global.js"></script>
+  <script src="scripts/language.js"></script>
   <script src="scripts/slider.js"></script>
   <script src="scripts/first-page.js"></script>
   <script src="scripts/map.js"></script>

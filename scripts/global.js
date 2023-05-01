@@ -1,3 +1,5 @@
+const presentationTextElt = document.querySelector(".presentation-hello");
+
 let viewportHeight;
 let maxPageHeight;
 

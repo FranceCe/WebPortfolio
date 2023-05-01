@@ -48,11 +48,16 @@ function deg2rad(deg) {
   return deg * (Math.PI / 180);
 }
 
-let distanceMessage;
+let distanceMessageEn;
+let distanceMessageIt;
 function setDistanceMessage(distance) {
-  distanceMessage = `Roughly estimating based on your current ip address, it looks like we are ${
+  distanceMessageEn = `Roughly estimating based on your current ip address, it looks like we are ${
     distance < 50 ? "just" : ""
-  } ${distance} Km apart!`;
+  } ${distance} Km apart !`;
+
+  distanceMessageIt = `Basandomi sul tuo attuale indirizzo ip, pare che siamo distanti ${
+    distance < 50 ? "solo" : ""
+  } ${distance} Kilometri!`;
 }
 
 const options = {
@@ -67,19 +72,27 @@ function writeDistance(elements, distanceObserver) {
   elements.forEach((element) => {
     if (element.isIntersecting) {
       insertLikeTypingDistanceMessage();
-      distanceObserver.unobserve(element.target);
+      distanceObserver.unobserve(messageContainerEn);
+      distanceObserver.unobserve(messageContainerIt);
     }
   });
 }
 
-const messageContainer = document.querySelector(".distance-message-container");
+const messageContainerEn = document.querySelector(
+  ".distance-message-container[lang='en']"
+);
+const messageContainerIt = document.querySelector(
+  ".distance-message-container[lang='it']"
+);
 
-distanceObserver.observe(messageContainer);
+distanceObserver.observe(messageContainerEn);
+distanceObserver.observe(messageContainerIt);
 
 function insertLikeTypingDistanceMessage() {
   setTimeout(() => {
-    if (distanceMessage) {
-      insertLikeTyping(messageContainer, distanceMessage, 50);
+    if (distanceMessageEn) {
+      insertLikeTyping(messageContainerEn, distanceMessageEn, 50);
+      insertLikeTyping(messageContainerIt, distanceMessageIt, 50);
     } else {
       setTimeout(insertLikeTypingDistanceMessage, 300);
     }
