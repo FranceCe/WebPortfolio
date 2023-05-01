@@ -23,12 +23,12 @@
   margin-top: 5px;
   background-image: linear-gradient(
     to right,
-    green,
-    green 33%,
+    var(--dark-green),
+    var(--dark-green) 33%,
     white 33%,
     white 66%,
-    red 66%,
-    red 100%
+    var(--red) 66%,
+    var(--red) 100%
   );
 }
 
@@ -39,8 +39,8 @@
       to bottom,
       transparent,
       transparent 43%,
-      red 43%,
-      red 57%,
+      var(--red) 43%,
+      var(--red) 57%,
       transparent 57%,
       transparent 100%
     ),
@@ -48,8 +48,8 @@
       to right,
       transparent,
       transparent 45%,
-      red 45%,
-      red 55%,
+      var(--red) 45%,
+      var(--red) 55%,
       transparent 55%,
       transparent 100%
     ),
@@ -57,8 +57,8 @@
       var(--flag-stripes-angle),
       transparent,
       transparent 47%,
-      red 47%,
-      red 53%,
+      var(--red) 47%,
+      var(--red) 53%,
       transparent 53%,
       transparent 100%
     ),
@@ -66,8 +66,8 @@
       calc(-1 * var(--flag-stripes-angle)),
       transparent,
       transparent 47%,
-      red 47%,
-      red 53%,
+      var(--red) 47%,
+      var(--red) 53%,
       transparent 53%,
       transparent 100%
     ),
@@ -107,5 +107,5 @@
       transparent 58%,
       transparent 100%
     ),
-    linear-gradient(to right, blue, blue);
+    linear-gradient(to right, var(--dark-blue), var(--dark-blue));
 }
