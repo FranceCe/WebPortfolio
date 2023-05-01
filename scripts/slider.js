@@ -20,7 +20,9 @@ const pages = {
   4: "fourth",
   5: "fifth",
 };
+
 window.addEventListener("scroll", updateSlider, { passive: true });
+
 window.addEventListener(
   "resize",
   () => {
