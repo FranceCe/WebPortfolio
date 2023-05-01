@@ -57,7 +57,7 @@ function setDistanceMessage(distance) {
 
   distanceMessageIt = `Basandomi sul tuo attuale indirizzo ip, pare che siamo distanti ${
     distance < 50 ? "solo" : ""
-  } ${distance} Kilometri!`;
+  } ${distance} Kilometri !`;
 }
 
 const options = {
