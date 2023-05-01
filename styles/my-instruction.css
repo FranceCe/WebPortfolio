@@ -14,7 +14,11 @@
 }
 
 .my-instruction .section-title-small {
-  margin: 20px 0;
+  margin-top: 20px;
+}
+
+.my-instruction .section-title {
+  margin-bottom: 20px;
 }
 
 .point-container {
@@ -38,7 +42,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
 }
 
 .cv-message-container button {

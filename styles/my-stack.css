@@ -81,3 +81,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.my-stack .section-title {
+  margin-bottom: 20px;
+}

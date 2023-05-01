@@ -80,6 +80,14 @@
     min-height: 6rem;
   }
 
+  .my-instruction .section-title {
+    margin-bottom: 3rem;
+  }
+
+  .my-stack .section-title {
+    margin-bottom: 0;
+  }
+
   .section-title-small,
   .upper-text,
   .normal-text {
