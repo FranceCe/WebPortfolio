@@ -1,13 +1,13 @@
 .flags-container {
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
   z-index: 100;
 }
 
 .flag {
   --flag-width: 40px;
-  display: block;
+  display: inline-block;
   height: calc(var(--flag-width) / 1.6);
   width: var(--flag-width);
   border: 1.5px solid black;
@@ -22,7 +22,7 @@
 }
 
 .flag.italian {
-  margin-top: 5px;
+  margin-left: 5px;
   background-image: linear-gradient(
     to right,
     var(--dark-green),

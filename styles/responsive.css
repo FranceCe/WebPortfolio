@@ -1,12 +1,6 @@
 @media only screen and (max-width: 1200px) {
   .flag {
     --flag-width: 30px;
-    display: inline-block;
-  }
-
-  .flag.italian {
-    margin-top: 0;
-    margin-left: 5px;
   }
 
   .first-page .container {
@@ -116,12 +110,13 @@
   }
 
   .presentation .presentation-text {
-    font-size: 5rem;
+    font-size: 4.5rem;
     padding: 0 4rem;
   }
 
   .first-page .container .profile-pic-container {
     margin: 0;
+    margin-top: -8rem;
   }
 
   :root {
