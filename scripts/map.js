@@ -1,4 +1,4 @@
-const myAddressCoordinates = {
+/*const myAddressCoordinates = {
   lat: 45.59768,
   lon: 9.2644,
 };
@@ -96,4 +96,4 @@ function insertLikeTypingDistanceMessage() {
       setTimeout(insertLikeTypingDistanceMessage, 300);
     }
   }, 300);
-}
+}*/
