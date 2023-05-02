@@ -21,7 +21,9 @@ fetch("https://api.ipify.org?format=json")
           geoData.lon
         );
         const roundedDistance = Math.round(distance);
-        setDistanceMessage(roundedDistance);
+        if (roundedDistance >= 0) { //checks whether its a number
+          setDistanceMessage(roundedDistance);
+        }
       });
   })
   .catch((err) => console.log(err));
