@@ -16,7 +16,6 @@ function setPageScroll() {
     }
   });
 
-  console.log(viewportHeight, maxPageHeight);
   if (maxPageHeight <= viewportHeight) {
     document.documentElement.style.scrollSnapType = "y proximity";
   } else {

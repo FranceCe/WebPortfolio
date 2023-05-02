@@ -9,13 +9,11 @@ fetch("https://api.ipify.org?format=json")
   .then((res) => res.json())
   .then((ipObj) => {
     ip = ipObj.ip;
-    console.log("ip", ip);
   })
   .then(() => {
     fetch(`http://ip-api.com/json/${ip}`)
       .then((res) => res.json())
       .then((geoData) => {
-        console.log(geoData);
         const distance = getDistance(
           myAddressCoordinates.lat,
           myAddressCoordinates.lon,
@@ -23,7 +21,6 @@ fetch("https://api.ipify.org?format=json")
           geoData.lon
         );
         const roundedDistance = Math.round(distance);
-        console.log("distance", roundedDistance);
         setDistanceMessage(roundedDistance);
       });
   })
